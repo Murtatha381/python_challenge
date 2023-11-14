@@ -1,7 +1,7 @@
 import os
 import csv
 
-csvpath = os.path.join('Resources', "election_data.csv")
+PyPoll_csvpath = os.path.join('Resources', "election_data.csv")
 output_path = os.path.join('Pypoll_Output')
 
 # Initialize variables
@@ -10,7 +10,7 @@ candidates = {}
 winner = {"name": "", "votes": 0}
 
 # Open and read the CSV file
-with open(csvpath, newline='', encoding='UTF-8') as csvfile:
+with open(PyPoll_csvpath, newline='', encoding='UTF-8') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
     header = next(csvreader)
 

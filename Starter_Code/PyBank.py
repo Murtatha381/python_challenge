@@ -1,7 +1,7 @@
 import os
 import csv
 
-csvpath = os.path.join('Resources', 'budget_data.csv')
+PyBank_csvpath = os.path.join('Resources', 'budget_data.csv')
 
 # Initialize variables
 total_months = 0
@@ -12,7 +12,7 @@ greatest_increase = {"date": "", "amount": float("-inf")}
 greatest_decrease = {"date": "", "amount": float("inf")}
 
 # Open and read csv
-with open(csvpath, newline='', encoding='UTF-8') as csvfile:
+with open(PyBank_csvpath, newline='', encoding='UTF-8') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
     header = next(csvreader)  # Skip the header row
 
